@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="icon" href="/image/weather.png"/>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>{{message}}</p>
+        {{#if visit}}
+        <h2><a href='{{visit}}'>Help Page</a></h2>
+        {{/if}}
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>
