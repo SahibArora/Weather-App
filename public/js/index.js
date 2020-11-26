@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault();
     var location = document.getElementById('location').value;
 
-    var url = 'http://localhost:8080/weather?address='+location;
+    var url = '/weather?address='+location;
     
     fetch(url).then((response)=>{
         response.json().then((data)=>{
