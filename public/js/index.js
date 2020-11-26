@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit',(e)=>{
                 console.log("Error")
                 document.getElementById('weather').innerHTML = "Error!"
             }else{
-                document.getElementById('weather').innerHTML = "Weather in "+data.place+" is "+data.Temperature+" ,it feels like "+data.FeelsLike+" with humidity "+data.humidity+" and wind speed of "+wind_speed+"."
+                document.getElementById('weather').innerHTML = "Weather in "+data.place+" is "+data.Temperature+" ,it feels like "+data.FeelsLike+" with humidity "+data.humidity+"."
             }
         })
     })

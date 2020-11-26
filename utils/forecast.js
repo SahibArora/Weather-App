@@ -15,8 +15,7 @@ module.exports.forecast = (geoCode,callback) => {
                 "place": geoCode.place,
                 "title": "Weather",
                 "name": "Sahib Arora",
-                "humidity": response.body.current.huidity,
-                "wind_speed": response.body.current.wind_speed
+                "humidity": response.body.current.humidity
             });
         }
     })
